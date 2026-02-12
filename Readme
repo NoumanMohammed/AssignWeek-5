@@ -1,0 +1,27 @@
+# Week 5 – Neural Networks for Vision Tasks
+
+Dataset: **CIFAR-10** (auto-downloaded on first run)
+
+## Setup
+```bash
+pip install -r requirements.txt
+```
+
+## Run each step
+```bash
+python image_captioning.py       # Step 3 – RNN captioning  → output_captioning.png
+python attention_captioning.py   # Step 4 – Attention captions → output_attention_captions.png
+python image_gradients.py        # Step 5 – Saliency + confusion matrix → output_saliency.png, output_confusion_matrix.png
+python style_transfer.py         # Step 6 – Style transfer → output_style_transfer.png
+```
+
+## Output files
+| File | Used for |
+|---|---|
+| `output_captioning.png` | RNN caption on one image |
+| `output_attention_captions.png` | ViT+GPT-2 captions, all 10 classes |
+| `output_saliency.png` | Saliency heatmaps, all 10 classes |
+| `output_training_curves.png` | Loss & accuracy curves over epochs |
+| `output_perclass_accuracy.png` | Per-class accuracy bar chart |
+| `output_tsne.png` | t-SNE feature embedding scatter plot |
+| `output_style_transfer.png` | Style transfer before/after |
